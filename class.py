@@ -1,67 +1,67 @@
 from enum import Enum
 
 class CoreClass(Enum):
-    BARBARIAN = 1
-    BARD = 2
-    CLERIC = 3
-    DRUID = 4
-    FIGHTER = 5
-    MONK = 6
-    PALADIN = 7
-    RANGER = 8
-    ROGUE = 9
-    SORCERER = 10
-    WIZARD = 11
+    BARBARIAN = "Barbarian"
+    BARD = "Bard"
+    CLERIC = "Cleric"
+    DRUID = "Druid"
+    FIGHTER = "Fighter"
+    MONK = "Monk"
+    PALADIN = "Paladin"
+    RANGER = "Ranger"
+    ROGUE = "Rogue"
+    SORCERER = "Sorcerer"
+    WIZARD = "Wizard"
 
 class BaseClass(Enum):
-    ALCHEMIST = 1
-    CAVALIER = 2
-    GUNSLINGER = 3
-    INQUISITOR = 4
-    MAGUS = 5
-    OMDURA = 6
-    ORACLE = 7
-    SHIFTER = 8
-    SUMMONER = 9
-    WITCH = 10
-    VAMPIRE_HUNTER = 11
-    VIGILANTE = 12
+    ALCHEMIST = "Alchemist"
+    CAVALIER = "Cavalier"
+    GUNSLINGER = "Gunslinger"
+    INQUISITOR = "Inquisitor"
+    MAGUS = "Magus"
+    OMDURA = "Omdura"
+    ORACLE = "Oracle"
+    SHIFTER = "Shifter"
+    SUMMONER = "Summoner"
+    WITCH = "Witch"
+    VAMPIRE_HUNTER = "Vampire Hunter"
+    VIGILANTE = "Vigilante"
 
 class HybridClass(Enum):
-    ARCANIST = 1 # SORCERER, WIZARD
-    BLOODRAGER = 2 # BARBARIAN, SORCERER
-    BRAWLER = 3 # FIGHTER, MONK
-    HUNTER = 4 # DRUID, RANGER
-    INVESTIGATOR = 5 # ALCHEMIST, ROGUE
-    SHAMAN = 6 # ORACLE, WITCH
-    SKALD = 7 # BARBARIAN, BARD
-    SLAYER = 8 # RANGER, ROGUE
-    SWASHBUCKLER = 9 # FIGHTER, GUNSLINGER
-    WARPRIEST = 10 # FIGHTER, CLERIC
+    ARCANIST = "Arcanist" # SORCERER, WIZARD
+    BLOODRAGER = "Bloodrager" # BARBARIAN, SORCERER
+    BRAWLER = "Brawler" # FIGHTER, MONK
+    HUNTER = "Hunter" # DRUID, RANGER
+    INVESTIGATOR = "Investigator" # ALCHEMIST, ROGUE
+    SHAMAN = "Shaman" # ORACLE, WITCH
+    SKALD = "Skald" # BARBARIAN, BARD
+    SLAYER = "Slayer" # RANGER, ROGUE
+    SWASHBUCKLER = "Swashbuckler" # FIGHTER, GUNSLINGER
+    WARPRIEST = "Warpriest" # FIGHTER, CLERIC
 
 class UnchainedClass(Enum):
-    BARBARIAN = 1
-    MONK = 2
-    ROGUE = 3
-    SUMMONER = 4
+    BARBARIAN = "UC Barbarian"
+    MONK = "UC Monk"
+    ROGUE = "UC Rogue"
+    SUMMONER = "UC Summoner"
 
 class OccultClass(Enum):
-    KINETICIST = 1
-    MEDIUM = 2
-    MESMERIST = 3
-    OCCULTIST = 4
-    PSYCHIC = 5
-    SPIRITUALIST = 6
+    KINETICIST = "Kineticist"
+    MEDIUM = "Medium"
+    MESMERIST = "Mesmerist"
+    OCCULTIST = "Occultist"
+    PSYCHIC = "Psychic"
+    SPIRITUALIST = "Spiritualist"
 
 class AlternateClass(Enum):
-    ANTIPALADIN = 1
-    NINJA = 2
-    SAMURAI = 3
+    ANTIPALADIN = "Antipaladin"
+    NINJA = "Ninja"
+    SAMURAI = "Samurai"
 
 class NPCClass(Enum):
-    ADEPT = 1
-    ARISTOCRAT = 2
-    COMMONER = 3
-    EXPERT = 4
-    WARRIOR = 5
+    ADEPT = "Adept"
+    ARISTOCRAT = "Aristocrat"
+    COMMONER = "Commoner"
+    EXPERT = "Expert"
+    WARRIOR = "Warrior"
 
