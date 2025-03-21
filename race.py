@@ -75,3 +75,20 @@ class UnknownRace(Enum):
     SAMSARAN = "Samsaran"
     STRIX = "Strix"
     WAYANG = "Wayang"
+
+class PlayerRace:
+    def __init__(self, race):
+        self.race = race
+        self.ability_bonus = 0
+        self.ability_penalty = 0
+        self.size = "Medium"
+        self.type = "Humanoid"
+        self.subtype = ""
+        self.speed = 30
+        self.s_lang = "Common"
+        self.senses = ""
+        self.def_traits = ""
+        self.off_traits = ""
+        self.skill_bonuses = ""
+        self.sp_su_abilities = ""
+        self.race_points = 11
