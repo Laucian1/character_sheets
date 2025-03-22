@@ -170,7 +170,7 @@ class Gnome(CharacterRace):
             {"Illusion Resistance": "Gnomes gain a +2 racial saving throw bonus against illusion spells and effects."},
             {"Gnome Magic": "Gnomes add +1 to the DC of any saving throws against illusion spells that they cast. Gnomes with Charisma scores of 11 or higher also gain the following spell-like abilities: 1/day—dancing lights, ghost sound, prestidigitation, and speak with animals. The caster level for these effects is equal to the gnome’s level. The DC for these spells is equal to 10 + the spell’s level + the gnome’s Charisma modifier."},
             {"Hatred": "Gnomes receive a +1 bonus on attack rolls against humanoid creatures of the reptilian and goblinoid subtypes because of their special training against these hated foes."},
-            {"Weapon Familiarity": "Gnomes receive a +1 bonus on attack rolls against humanoid creatures of the reptilian and goblinoid subtypes because of their special training against these hated foes."},
+            {"Weapon Familiarity": "Gnomes are proficient with gnome hooked hammers and treat any weapon with the word 'gnome' in its name as a martial weapon."},
         ]
         self.skill_bonuses = [
             {"Keen Senses": "Gnomes receive a +2 racial bonus on Perception checks."},
