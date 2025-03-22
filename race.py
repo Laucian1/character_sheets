@@ -194,7 +194,7 @@ class HalfElf(CharacterRace):
         self.languages.append("Elven")
         self.senses = {"Low-light vision": "Half-elves can see twice as far as humans in conditions of dim light."}
         self.racial_abilities = [
-            {"Elven Immunitites": "Half-elves are immune to magic sleep effects and gain a +2 racial saving throw bonus against enchantment spells and effects."},
+            {"Elven Immunities": "Half-elves are immune to magic sleep effects and gain a +2 racial saving throw bonus against enchantment spells and effects."},
             {"Adaptability": "Half-elves receive Skill Focus as a bonus feat at 1st level."},
             {"Elf Blood": "Half-elves count as both elves and humans for any effect related to race."},
             {"Multitalented": "Half-elves choose two favored classes at first level and gain +1 hit point or +1 skill point whenever they take a level in either one of those classes"}
@@ -227,7 +227,7 @@ class HalfOrc(CharacterRace):
         self.skill_bonuses = [
             {"Intimidating": "Half-orcs receive a +2 racial bonus on Intimidate checks due to their fearsome nature."}
         ]
-        self.race_points = 0
+        self.race_points = 8
 
 class Halfling(CharacterRace): 
     def __init__(self):
@@ -251,7 +251,7 @@ class Halfling(CharacterRace):
             {"Sure-Footed": "Halflings receive a +2 racial bonus on Acrobatics and Climb checks."},
             {"Keen Senses": "Halflings receive a +2 racial bonus on Perception checks."}
         ]
-        self.race_points = 0
+        self.race_points = 9
 
 class Human(CharacterRace):
     def __init__(self):
