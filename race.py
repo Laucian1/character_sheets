@@ -232,7 +232,7 @@ class HalfOrc(CharacterRace):
 class Halfling(CharacterRace): 
     def __init__(self):
         super().__init__()
-        self.name = race
+        self.name = CoreRace.HALFLING.value
         self.ability_score_modifiers = {
             "Strength": -2,
             "Dexterity": 2,
