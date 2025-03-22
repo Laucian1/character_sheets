@@ -98,6 +98,7 @@ class CharacterRace:
         character.speed = self.speed
 
         character.languages.extend(self.languages)
+        character.senses.update(self.senses)
         character.racial_abilities.extend(self.racial_abilities)
 
     # Automate Languages?
