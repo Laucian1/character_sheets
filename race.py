@@ -100,12 +100,14 @@ class CharacterRace:
         character.languages.extend(self.languages)
         character.racial_abilities.extend(self.racial_abilities)
 
+    # Automate Languages?
+
 class Dwarf(CharacterRace):
     def __init__(self):
         super().__init__()
         self.name = CoreRace.DWARF.value
         self.ability_score_modifiers = {
-            "Constituion" : 2,
+            "Constitution" : 2,
             "Wisdom" : 2,
             "Charisma" : -2
         }
@@ -124,7 +126,7 @@ class Dwarf(CharacterRace):
             {"Greed": "Dwarves gain a +2 racial bonus on Appraise checks made to determine the price of non-magical goods that contain precious metals or gemstones"},
             {"Stonecunning": "Dwarves gain a +2 bonus on Perception checks to notice unusual stonework, such as traps and hidden doors located in stone walls or floors. They receive a check to notice such features whenever they pass within 10 feet of them, whether or not they are actively looking."},
         ]
-
+        self.race_points = 11
 
 class Elf(CharacterRace):
     def __init__(self):
@@ -143,7 +145,9 @@ class Elf(CharacterRace):
             {"Weapon Familiarity": "Elves are proficient with longbows (including composite longbows), longswords, rapiers, and shortbows (including composite shortbows), and treat any weapon with the word “elven” in its name as a martial weapon."},
             {"Elven Magic": "Elves receive a +2 racial bonus on caster level checks made to overcome spell resistance. In addition, elves receive a +2 racial bonus on Spellcraft skill checks made to identify the properties of magic items."}
         ]
-        self.skill_bonuses = {"Keen Senses": "Elves receive a +2 racial bonus on Perception checks"}
+        self.skill_bonuses = [
+            {"Keen Senses": "Elves receive a +2 racial bonus on Perception checks"}
+        ]
         self.race_points = 10
 
 class Human(CharacterRace):
@@ -164,3 +168,9 @@ class Human(CharacterRace):
             {"Skilled": "Humans gain an additional skill rank at first level and one additional rank whenever they gain a level."}
         ]
         self.race_points = 9
+
+    def set_ability_score_bonus(self, ability):
+        if ability in self.ability_score_modifiers:
+            self.ability_score_modifiers[ability] += 2
+        else:
+            raise ValueError(f"Invalid ability score: {ability}")
