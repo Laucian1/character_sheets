@@ -1,10 +1,17 @@
 class CharacterRace:
     def __init__(self, race):
         self.name = race
-        self.ability_score_modifiers = {}
+        self.ability_score_modifiers = {
+            "Strength": 10,
+            "Dexterity": 10,
+            "Constitution": 10,
+            "Intelligence": 10,
+            "Wisdom": 10,
+            "Charisma": 10
+        }
         self.size = "Medium"
         self.type = "Humanoid"
-        self.subtype = ""
+        self.subtype = []
         self.speed = 30
         self.languages = ["Common"]
         self.senses = {}
@@ -22,6 +29,7 @@ class CharacterRace:
         character.languages.extend(self.languages)
         character.senses.update(self.senses)
         character.racial_abilities.extend(self.racial_abilities)
+        character.skill_bonuses.extend(self.skill_bonuses)
     
     def set_ability_score_bonus(self, ability):
         if "human" in self.subtype:
@@ -32,5 +40,5 @@ class CharacterRace:
         else:
             raise ValueError(f"{self.name} does not have a flexible ability score bonus.")
 
-    # Automate Languages?
+    # Automate Bonus Languages?
 

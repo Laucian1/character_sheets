@@ -89,14 +89,6 @@ class HalfElf(CharacterRace):
     def __init__(self):
         super().__init__()
         self.name = CoreRace.HALF_ELF.value
-        self.ability_score_modifiers = {
-            "Strength" : 0,
-            "Dexterity" : 0,
-            "Constitution" : 0,
-            "Intelligence" : 0,
-            "Wisdom" : 0,
-            "Charisma" : 0
-        }
         self.subtype = ["human", "elf"]
         self.languages.append("Elven")
         self.senses = {"Low-light vision": "Half-elves can see twice as far as humans in conditions of dim light."}
@@ -115,14 +107,6 @@ class HalfOrc(CharacterRace):
     def __init__(self):
         super().__init__()
         self.name = CoreRace.HALF_ORC.value
-        self.ability_score_modifiers = {
-            "Strength" : 0,
-            "Dexterity" : 0,
-            "Constitution" : 0,
-            "Intelligence" : 0,
-            "Wisdom" : 0,
-            "Charisma" : 0
-        }
         self.subtype = ["human", "orc"]
         self.languages.append("Orc")
         self.senses = {"Darkvision": "Half-orcs can see in the dark up to 60 feet."}
@@ -164,14 +148,6 @@ class Human(CharacterRace):
     def __init__(self):
         super().__init__()
         self.name = CoreRace.HUMAN.value
-        self.ability_score_modifiers = {
-            "Strength" : 0,
-            "Dexterity" : 0,
-            "Constitution" : 0,
-            "Intelligence" : 0,
-            "Wisdom" : 0,
-            "Charisma" : 0
-        }
         self.subtype = ["human"]
         self.racial_abilities = [
             {"Bonus Feat": "Humans select one extra feat at 1st level."}, 
