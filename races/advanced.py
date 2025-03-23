@@ -1,0 +1,20 @@
+from enum import Enum
+
+class AdvancedRace(Enum):
+    AASIMAR = "Aasimar"
+    ANDROID = "Android"
+    DHAMPIR = "Dhampir"
+    DROW_COMMON = "Drow (Common)"
+    FETCHLING = "Fetchling"
+    GATHLAIN = "Gathlain"
+    GHORAN = "Ghoran"
+    KASAATHA = "Kasatha"
+    LASHUNTA = "Lashunta"
+    SHABTI = "Shabti"
+    SYRINX = "Syrinx"
+    SULI = "Suli"
+    TENGU = "Tengu"
+    TIEFLING = "Tiefling"
+    VISHKANYA = "Vishkanya"
+    WYRWOOD = "Wyrwood"
+    WYVARAN = "Wyvaran"

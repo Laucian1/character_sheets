@@ -1,0 +1,21 @@
+from enum import Enum
+
+class StandardRace(Enum):
+    CATFOLK = "Catfolk"
+    DUERGAR = "Duergar"
+    GNOLL = "Gnoll"
+    GRIPPLI = "Grippli"
+    GOBLIN = "Goblin"
+    HOBGOBLIN = "Hobgoblin"
+    IFRIT = "Ifrit"
+    KOBOLD = "Kobold"
+    LIZARDFOLK = "Lizardfolk"
+    MONKEY_GOBLIN = "Monkey Goblin"
+    ORC = "Orc" 
+    OREAD = "Oread"
+    RATFOLK = "Ratfolk"
+    SKINWALKER = "Skinwalker"
+    SYLPH = "Sylph"
+    TRIAXIAN = "Triaxian"
+    UNDINE = "Undine"
+    VANARA = "Vanara"

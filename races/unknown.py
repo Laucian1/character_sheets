@@ -1,0 +1,20 @@
+from enum import Enum
+
+class UnknownRace(Enum):
+    AQUATIC_ELF = "Aquatic Elf"
+    ASTOMOI = "Astomoi"
+    CALIGNI = "Caligni"
+    CHANGELING = "Changeling"
+    DEEP_ONE_HYBRID = "Deep One Hybrid"
+    GANZI = "Ganzi"
+    GILLMEN = "Gillmen"
+    KITSUNE = "Kitsune"
+    KURU = "Kuru"
+    MERFOLK = "Merfolk"
+    MUNAVRI = "Munavri"
+    NAGAJI = "Nagaji"
+    ORANG_PENDAK = "Orang-Pendak"
+    REPTOID = "Reptoid"
+    SAMSARAN = "Samsaran"
+    STRIX = "Strix"
+    WAYANG = "Wayang"
