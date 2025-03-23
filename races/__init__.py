@@ -3,3 +3,4 @@ from .standard import *
 from .advanced import *
 from .monstrous import *
 from .unknown import *
+from .template import *

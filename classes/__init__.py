@@ -5,3 +5,4 @@ from .hybrid import *
 from .npc import *
 from .occult import *
 from .unchained import *
+from .template import *

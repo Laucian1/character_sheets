@@ -1,5 +1,5 @@
 from enum import Enum
-from .base import CharacterRace
+from .template import CharacterRace
 
 class CoreRace(Enum):
     DWARF = "Dwarf"
