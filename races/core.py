@@ -179,8 +179,3 @@ class Human(CharacterRace):
         ]
         self.race_points = 9
 
-    def set_ability_score_bonus(self, ability):
-        if ability in self.ability_score_modifiers:
-            self.ability_score_modifiers[ability] += 2
-        else:
-            raise ValueError(f"Invalid ability score: {ability}")

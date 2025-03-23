@@ -22,6 +22,15 @@ class CharacterRace:
         character.languages.extend(self.languages)
         character.senses.update(self.senses)
         character.racial_abilities.extend(self.racial_abilities)
+    
+    def set_ability_score_bonus(self, ability):
+        if "human" in self.subtype:
+            if ability in self.ability_score_modifiers:
+                self.ability_score_modifiers[ability] += 2
+            else:
+                raise ValueError(f"Invalid ability score: {ability}")
+        else:
+            raise ValueError(f"{self.name} does not have a flexible ability score bonus.")
 
     # Automate Languages?
 
